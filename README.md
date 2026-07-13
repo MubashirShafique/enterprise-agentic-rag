@@ -4,7 +4,13 @@
 
 <h1 align="center">PyDocs AI</h1> -->
 <p align="center">
-  <img src="./banner.png" alt="PyDocs AI Banner" width="100%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.png">
+  <img alt="PyDocs AI Banner" src="./assets/banner-dark.png" width="100%">
+</picture>
+
 </p>
 
 <p align="center">
