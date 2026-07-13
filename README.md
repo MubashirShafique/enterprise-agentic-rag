@@ -1,11 +1,10 @@
-<p align="center">
-  <img src="./logo.png" width="140" alt="PyDocs AI logo">
+<!-- <p align="left">
+  <img src="./logo.png" width="110" alt="PyDocs AI logo">
 </p>
 
-<h1 align="center">PyDocs AI</h1>
-
+<h1 align="center">PyDocs AI</h1> -->
 <p align="center">
-  <b>An agentic RAG assistant for Pydantic AI documentation</b>
+  <img src="./banner.png" alt="PyDocs AI Banner" width="100%">
 </p>
 
 <p align="center">
