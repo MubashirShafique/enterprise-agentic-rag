@@ -8,7 +8,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./banner-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="./banner-light.png">
-  <img alt="PyDocs AI Banner" src="./assets/banner-dark.png" width="100%">
+  <img alt="PyDocs AI Banner" src="./assets/banner-dark.png" width="65%">
 </picture>
 
 </p>
