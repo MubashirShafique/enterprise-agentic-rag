@@ -164,11 +164,11 @@ flowchart TD
     style Retrieval fill:#311432,stroke:#c084fc,stroke-width:2px,color:#fff
 
     style Observability fill:#172554,stroke:#60a5fa,stroke-width:2px,color:#fff
-
 ```
 
 ## Project Directory Structure
-```mermaid
+
+```text
 enterprise-agentic-rag /
 ├── app/
 │   ├── agent/
@@ -221,7 +221,6 @@ enterprise-agentic-rag /
 ├── xyz/
 ├── .env
 └── requirements.txt
-
 ```
 
 ## Deep Dive into Core Modules
