@@ -86,7 +86,7 @@ If you are using FastAPI and Pydantic tracking, install it with full integration
 pip install "logfire[fastapi,pydantic]"
 
 ```
-
+<br><br>
 ### Step 2: Authenticate via Terminal CLI
 Authenticate your account using the Logfire CLI:
 ```bash
@@ -96,7 +96,7 @@ logfire auth
 
 > Note: This command will open a browser link. Log in to your Logfire account, copy the authorization code/token, and paste it back into the terminal to verify.
 
-
+<br><br>
 ### Step 3: Set Environment Variables (.env)
 If you are running in automated environments or production CI/CD pipelines, add your token to the .env file:
 
