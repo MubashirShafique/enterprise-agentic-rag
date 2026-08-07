@@ -1,4 +1,4 @@
-# 🎨 PyDocs AI — UI Screenshots & Previews
+#  PyDocs AI — UI Screenshots & Previews
 
 Welcome to the UI preview hub for **PyDocs AI**. Explore the interface screens, features, and system guardrails below.
 
