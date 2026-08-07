@@ -58,4 +58,4 @@ Welcome to the UI preview hub for **PyDocs AI**. Explore the interface screens, 
 
 <br>
 
-[⬅️ Back to Main Repository README](../README.md)
+[⬅️ Back to Main Repository]( https://github.com/MubashirShafique/enterprise-agentic-rag)
