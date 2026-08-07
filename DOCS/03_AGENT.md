@@ -94,11 +94,11 @@ app/
 ### Step 1: Request Ingestion & Logfire Monitoring
 1. A `POST` request is sent to `/query` containing `q` (query string) and `thread_id` (session identifier).
 2. `logfire.instrument_fastapi(app)` automatically captures HTTP headers, timing, latency, and status codes.
-
+<br><br>
 ### Step 2: Guardrails Evaluation (`guardrails/rails.py`)
 1. Before calling the agent graph, the input is evaluated by **NeMo Guardrails**.
 2. If safety policies or off-topic rules are violated (`fired == True`), execution is short-circuited and a pre-defined guardrail response is returned directly to the client as a `StreamingResponse`.
-
+<br><br>
 ### Step 3: LangGraph Execution Engine (`agent/agent.py`)
 If guardrails pass, the query is pushed to the `rag_agent` compiled graph:
 1. **Thread Memory**: Configured with `InMemorySaver` using `thread_id` to persist conversation history across requests.
@@ -106,20 +106,20 @@ If guardrails pass, the query is pushed to the `rag_agent` compiled graph:
 3. **`tools_condition`**:
    - If the LLM produces a tool call (e.g., `rag_search_tool`), routing dynamically moves to the **`tools`** node.
    - If no tool is needed, execution transitions to `END`.
-
+<br><br>
 ### Step 4: RAG Retrieval Tool Flow (`agent/tools/rag_tool.py`)
 When `rag_search_tool` is executed:
 1. **Query Embedding** (`embeddings.py`): Converts text into a 1536-dimensional vector using OpenAI via Portkey Gateway.
 2. **Qdrant Vector Search** (`qdrant_service.py`): Filters documents by official categories (`core_docs`, `advanced_docs`, `model_docs`) and retrieves top vector matches.
 3. **FlashRank Reranking** (`ranking_service.py`): Re-scores and re-ranks retrieved passages to maximize context precision and eliminate noise.
 4. Tool outputs are looped back to `chat_node` for final response synthesis.
-
+<br><br>
 ### Step 5: Streaming Response (`main.py`)
 - The FastAPI endpoint uses `rag_agent.astream(..., stream_mode="messages")`.
 - `AIMessageChunk` tokens are yields as `StreamingResponse(media_type="text/plain")` for real-time streaming to the user.
 
 ---
-
+<br><br>
 ##  5. API Endpoints
 
 | Endpoint | Method | Description |
