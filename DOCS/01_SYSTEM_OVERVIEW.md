@@ -228,34 +228,34 @@ enterprise-agentic-rag /
 ### 1. Client & API Layer (ui/ & app/main.py)
 - UI Interface (ui/index.html, script.js): Web user interface for streaming user queries and displaying real-time agent responses.
 - FastAPI Server (app/main.py): Serves as the main REST endpoint (/query). It receives incoming payload requests, validates schema formatting, and passes control to the safety guardrail layer.
-
+<br><br>
 ### 2. Security & Policy Layer (app/guardrails/)
 - NeMo Guardrails (rails.py & colang_rules.py): Acts as the frontline defense. Before any LLM call is executed, guardrails evaluate the input for prompt injections, jailbreaks, and off-topic questions.
 
-
+<br><br>
 ### 3. Agentic Execution Layer (app/agent/)
 - LangGraph State Manager (agent.py & state.py): Manages multi-turn conversation memory and tracks dynamic states across turns.
 
 - Nodes & Tools (nodes/, tools/): Contains planning and chat logic. If external factual knowledge is needed, the node routes execution to the RAG search tool (rag_search_tool).
+<br><br>
 
-
-### 3. Agentic Execution Layer (app/agent/)
+### 4. Agentic Execution Layer (app/agent/)
 - LangGraph State Manager (agent.py & state.py): Manages multi-turn conversation memory and tracks dynamic states across turns.
 - Nodes & Tools (nodes/, tools/): Contains planning and chat logic. If external factual knowledge is needed, the node routes execution to the RAG search tool (rag_search_tool).
 
-
+<br><br>
 ### 5. Retrieval & Reranking Engine (app/services/retrieval/ & app/ingestion/)
 - Document Ingestion (processor.py, splitter.py, documents_loader.py): Loads raw markdown documentation from DATA/true_data/, chunks it logically, generates embeddings, and indexes them into Qdrant Cloud.
 
 - Vector DB & Reranker (Qdrant & FlashRank): Fetches the top vector candidate matches from Qdrant Cloud and passes them to FlashRank for local, low-latency cross-encoder reranking.
 
-
+<br><br>
 ### 6. Observability & Tracing (observability/, Logfire & LangSmith)
 - Logfire: Monitors code-level execution steps, performance bottlenecks, and API request latency.
 
 - LangSmith: Records step-by-step LLM traces, prompt inputs, tool usage outputs, and evaluation metrics.
 
-
+<br><br>
 
 
 ## Data Flow Lifecycle
