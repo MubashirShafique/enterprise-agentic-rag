@@ -40,7 +40,7 @@ services/retrieval/
 ---
 
 ## 3. Pipeline Core Modules & Logic
-
+<br><br>
 ### Document Loader (ingestion/loaders/documents_loader.py)
 - Recursive File Scanning: Uses Path.rglob() to scan target directories for specified file extensions (e.g., .md, .txt).
 
@@ -52,7 +52,7 @@ services/retrieval/
 # Usage Example:
 raw_docs = load_documents("Data/core_docs", extension=".md")
 ```
-
+<br><br>
 
 ### Structural Chunking Engine (ingestion/chunking/splitter.py)
 - The chunking strategy preserves logical structure, paragraph context, and sentence boundaries.
@@ -68,7 +68,7 @@ raw_docs = load_documents("Data/core_docs", extension=".md")
 chunks = chunk_text(doc_content, chunk_size=800)
 
 ```
-
+<br><br>
 ### Embedding Generation (services/retrieval/embeddings.py)
 - Portkey Gateway Integration: Routes embedding generation through Portkey gateway for load balancing and fallback management.
 
@@ -80,7 +80,7 @@ chunks = chunk_text(doc_content, chunk_size=800)
 # Batch Embed Call:
 vectors = embed_batch(["chunk text 1", "chunk text 2"])
 ```
-
+<br><br>
 ### Ingestion Processor & Vector Upsert (ingestion/processor.py)
 - Unified Collection Architecture: Stores all categories within a single Qdrant collection using payload fields for categorization.
 
