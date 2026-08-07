@@ -38,6 +38,12 @@
 
 *Figure 1: PyDocs AI Interface with dynamic topic selection and quick-start prompts.*
 
+<p align="center">
+  <a href="./DOCS/UI.md">
+    <font color="red"><b>🔴 For more preview and response screenshots, click here!</b></font>
+  </a>
+</p>
+
 ---
 ## Key Features
 
