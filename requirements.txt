@@ -1,0 +1,58 @@
+# ----------------------- AGENTIC RAG Requirements ---------------------------------
+
+
+# ============ CORE API & WEB FRAMEWORK ============
+fastapi                     # Build REST APIs
+uvicorn[standard]           # Run the FastAPI server
+python-dotenv               # Load environment variables from .env
+requests                    # Make HTTP/API requests
+numpy                       # Numerical operations and arrays
+pytz                        # Handle time zones
+nest-asyncio                # Allow nested async event loops
+
+
+
+# =========== OPENAI (LLM + EMBEDDINGS)=================
+openai                      # Access OpenAI models
+langchain-openai            # Connect LangChain with OpenAI
+tiktoken                    # Count and split tokens
+langchain_core
+
+
+
+# ============== VECTOR STORE & RETRIEVAL ===============
+qdrant-client                  # Store and search vector embeddings
+flashrank                   # Re-rank retrieved documents
+
+
+
+# ============ LANGCHAIN & AGENTIC ORCHESTRATION ============
+langchain                   # Build LLM pipelines
+langgraph                   # Create agent workflows and state graphs
+langchain-community         # Community integrations for LangChain
+pydantic>=2.0.0             # Data validation and schemas
+
+
+
+# ============== OBSERVABILITY & LOGGING ===============
+langsmith                   # Trace and debug LangChain apps
+logfire[fastapi,requests]   # Application monitoring and telemetry
+
+
+
+# ============== GUARDRAILS =================
+nemoguardrails              # Add safety and response guardrails
+
+
+
+
+#============= LLM GATEWAY =================
+portkey-ai                  # Manage and route LLM API requests
+
+
+#================= For generate the report ================
+reportlab
+httpx 
+python-dotenv
+
+
