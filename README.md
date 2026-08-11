@@ -230,7 +230,7 @@ python -m evals.eval_pipeline
 | :---: | :--- | :--- |
 | **01** | [System Overview](./DOCS/01_SYSTEM_OVERVIEW.md) | High-level vision and end-to-end flow |
 | **02** | [Ingestion Engine](./DOCS/02_INGESTION_ENGINE.md) | Document parsing and indexing pipeline |
-| **03** | [Agent](./DOCS/03_AGENT.md) | Planner, Retriever, Responder internals |
+| **03** | [Agent](./DOCS/03_AGENT.md) | LangGraph graph, memory, and tool routing |
 | **04** | [Observability](./DOCS/04_OBSERVABILITY.md) | Logfire + LangSmith tracing |
 | **05** | [Environment Variables](./DOCS/05_ENVIRONMENT_VARIABLES.md) | All env vars and configuration reference |
 | **06** | [Guardrails](./DOCS/06_GUARDRAILS.md) | NeMo Guardrails implementation |
