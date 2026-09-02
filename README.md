@@ -190,6 +190,8 @@ LANGSMITH_API_KEY=""
 LANGSMITH_PROJECT="pydocs-ai"
 LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
 
+LOGFIRE_SEND_TO_LOGFIRE=false
+
 ```
 > **NOTE:** For step-by-step guidance on getting API keys or resolving configuration issues, refer to our **[Environment Variables Guide](./DOCS/05_ENVIRONMENT_VARIABLES.md)** or check the full **[Documentation Hub](#-documentation-hub)**.
 
