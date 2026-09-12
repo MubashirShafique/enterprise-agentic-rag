@@ -1,0 +1,9 @@
+# AI Red Teaming Dashboard & Evaluation Dependencies
+streamlit
+pandas
+fpdf2
+python-dotenv
+openai
+requests
+httpx
+pyrit
