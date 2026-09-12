@@ -7,7 +7,7 @@ Visual previews and execution summaries across the security evaluation suite.
 ### 1. Dashboard Overview
 ![Dashboard Overview](0_.png)
 
-High-level security posture displaying overall resilience score, total tests executed, and vulnerability status.
+Central SOC-style security overview showing a 99% resistance score across 209 automated adversarial tests[cite: 1, 4]. It displays live system status badges, resilience progress bars, and module-level test breakdowns[cite: 4].
 
 ---
 
@@ -16,7 +16,7 @@ High-level security posture displaying overall resilience score, total tests exe
 ### 2. Direct Prompt Injection
 ![Direct Prompt Injection](1_.png)
 
-Evaluates whether direct system-override instructions can hijack the model's core directives.
+Evaluates system resilience against authority personas, pseudo-XML delimiters, and token-smuggled system prompt leak attempts[cite: 7]. Tests verify whether the RAG model adheres to core directives without dropping its assistant persona[cite: 7].
 
 ---
 
@@ -25,7 +25,7 @@ Evaluates whether direct system-override instructions can hijack the model's cor
 ### 3. Crescendo Multi-Turn Escalation
 ![Crescendo Escalation](2_.png)
 
-Simulates multi-turn progressive conversation drift to bypass guardrails gradually over time.
+Simulates PyRIT's adaptive multi-turn escalation strategy that gradually builds rapport under developer pretext before attempting boundary violations[cite: 6]. It monitors whether internal configurations or retrieval parameters leak over long conversations[cite: 6].
 
 ---
 
@@ -34,7 +34,7 @@ Simulates multi-turn progressive conversation drift to bypass guardrails gradual
 ### 4. Encoding Obfuscation
 ![Encoding Obfuscation](3_.png)
 
-Tests model resistance against encoded adversarial instructions such as Base64 and ROT13.
+Tests guardrail detection against multi-layered encoding chains like Base32, Hex, chunked reverse, and Cyrillic homoglyph look-alikes[cite: 8]. Ensures raw or transformed strings do not bypass input filters to execute hidden instructions[cite: 8].
 
 ---
 
@@ -43,7 +43,7 @@ Tests model resistance against encoded adversarial instructions such as Base64 a
 ### 5. Orchestrator Multi-Turn Attack
 ![Orchestrator Attack](4_.png)
 
-Automated PyRIT orchestrator simulating natural, multi-turn escalation paths against the RAG system.
+Executes PyRIT RedTeamingAttack with rotating personas (auditor, debugging developer, frustrated user) across a single thread[cite: 9]. Verifies whether persistent behavioral pressure or context drift degrades system security boundaries[cite: 9].
 
 ---
 
@@ -52,7 +52,7 @@ Automated PyRIT orchestrator simulating natural, multi-turn escalation paths aga
 ### 6. Cross-Prompt Injection (XPIA) Baseline
 ![XPIA Baseline](5_.png)
 
-Evaluates system vulnerability against adversarial formatting instructions disguised as retrieved context.
+Tests vulnerability against simulated internal knowledge base entries injected with subtle out-of-band marker directives[cite: 2]. Evaluates whether the system treats untrusted retrieved content as pure reference data rather than executable instructions[cite: 2].
 
 ---
 
@@ -61,7 +61,7 @@ Evaluates system vulnerability against adversarial formatting instructions disgu
 ### 7. Skeleton Key XPIA
 ![Skeleton Key XPIA](6_.png)
 
-Tests research-justification jailbreak instructions disguised within administrative context payloads.
+Delivers fake administrative audit-mode justifications embedded within simulated retrieved context chunks[cite: 3, 10]. Evaluates whether privileged framing inside retrieved context can trick the model into disclosing system access levels[cite: 3].
 
 ---
 
@@ -70,7 +70,7 @@ Tests research-justification jailbreak instructions disguised within administrat
 ### 8. Advanced XPIA Suite
 ![Advanced XPIA](7_.png)
 
-Evaluates multiple complex XPIA injection variants covering data exfiltration and credential exposure.
+Runs complex injection vectors including HTML comment smuggling, fake markdown metadata, and footnote overrides targeting PII and credentials[cite: 3]. Ensures hidden document formatting cannot hijack downstream agent responses or exfiltrate parameters[cite: 3].
 
 ---
 
@@ -79,6 +79,6 @@ Evaluates multiple complex XPIA injection variants covering data exfiltration an
 ### 9. Bulk Fuzzing Scanner
 ![Bulk Fuzzing Scanner](8_.png)
 
-Large-scale automated prompt mutation scanner running high-volume variations against the live endpoint.
+Executes high-volume mutation scans combining deterministic technique matrices with LLM-generated semantic variations[cite: 5]. Tests live endpoint stability and throttles concurrent requests to identify boundary regressions[cite: 5].
 
 ---
