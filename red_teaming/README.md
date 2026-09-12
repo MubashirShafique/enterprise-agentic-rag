@@ -130,7 +130,7 @@ OPENAI_API_KEY="your-api-key-here"
 
 ---
 
-## ▶ How to Run This
+## How to Run This
 
 **Step 1 — Install the requirements**
 
@@ -148,7 +148,7 @@ This opens the dashboard in your browser, where you can run any attack module an
 
 ---
 
-## 📁 Project Structure (Quick Reference)
+## Project Structure (Quick Reference)
 
 | File | What It Does |
 |---|---|
