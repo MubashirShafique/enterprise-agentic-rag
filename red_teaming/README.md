@@ -19,14 +19,14 @@ This project sends it a large set of adversarial (attack) prompts to check if it
 
 ## What Gets Tested
 
-1. **Direct Prompt Injection** — trying to override the system's instructions directly, using tricks like fake system tags, authority claims, hidden text inside quotes, and switching languages.
-2. **Crescendo Escalation** — a slow, multi-turn conversation that builds trust before trying to sneak in a harmful request.
-3. **Encoding Tricks** — hiding the attack inside Base64, hex, ROT13, or other encodings so simple filters can't catch it.
-4. **Multi-Persona Attack** — the attacker keeps switching personas (confused new employee, frustrated user, "auditor", etc.) across one long conversation to find a weak spot.
-5. **XPIA (Cross-Prompt Injection)** — hiding attack instructions inside a "retrieved document," pretending it's normal content the chatbot looked up.
-6. **Skeleton Key XPIA** — combines a fake "audit mode" jailbreak with the XPIA trick above.
-7. **Advanced XPIA** — six different ways to sneak instructions into retrieved documents (HTML comments, fake metadata, fake footnotes, etc.).
-8. **Bulk Fuzzing** — automatically generates and tests many variations of each attack at once for broader coverage.
+1. **Direct Prompt Injection :**  trying to override the system's instructions directly, using tricks like fake system tags, authority claims, hidden text inside quotes, and switching languages.
+2. **Crescendo Escalation :** a slow, multi-turn conversation that builds trust before trying to sneak in a harmful request.
+3. **Encoding Tricks :** hiding the attack inside Base64, hex, ROT13, or other encodings so simple filters can't catch it.
+4. **Multi-Persona Attack :** the attacker keeps switching personas (confused new employee, frustrated user, "auditor", etc.) across one long conversation to find a weak spot.
+5. **XPIA (Cross-Prompt Injection) :** simulates indirect prompt injection by formatting adversarial instructions directly within user query payloads to mimic poisoned retrieved context without altering the underlying database.
+6. **Skeleton Key XPIA :** combines a fake "audit mode" jailbreak with the XPIA trick above.
+7. **Advanced XPIA :** six different ways to sneak instructions into retrieved documents (HTML comments, fake metadata, fake footnotes, etc.).
+8. **Bulk Fuzzing :**  automatically generates and tests many variations of each attack at once for broader coverage.
 
 ## Guardrails Hardening
 
