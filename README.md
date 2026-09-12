@@ -238,6 +238,7 @@ python -m evals.eval_pipeline
 | **06** | [Guardrails](./DOCS/06_GUARDRAILS.md) | NeMo Guardrails implementation |
 | **07** | [LLM Gateway](./DOCS/07_LLM_GATEWAY.md) | Portkey routing, fallback, and observability |
 | **08** | [Evals Pipeline](./DOCS/08_EVALS_PIPELINE.md) | Eval pipeline and result |
+| **09** | [AI Red Teaming](red_teaming/README.md) | Security testing suite and attack modules |
 
 
 ---
