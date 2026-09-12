@@ -55,6 +55,7 @@
 * **Full-Stack Observability:** Built-in deep tracing, latency tracking, and token usage monitoring using **Logfire** and **LangSmith**.
 * **FastAPI Backend:** Fully async REST API built with **FastAPI** for high throughput and easy integration.
 * **Automated PDF Report Generation:** Built-in **ReportLab** integration to generate downloadable PDF summaries and query reports.
+* **Adversarial Red Teaming:** Includes an automated 8-module red-teaming test suite (direct prompt injections, XPIA, crescendo escalation) with an interactive Streamlit evaluation dashboard.
 
 ---
 
@@ -114,8 +115,10 @@ graph TD
 ├── 📁 DOCS/           # System documentation and architectural guides
 ├── 📁 evals/          # RAG pipeline evaluation scripts and test datasets
 ├── 📁 observability/  # System execution traces and Logfire tracking visual assets
+├── 📁 red_teaming/    # PyRIT-based security testing suite & Streamlit attack dashboard
 ├── 📁 ui/             # Frontend user interface files and web screenshots
 └── 📁 xyz/            # Visual branding assets (banners and graphics)
+
 ```
 ---
 
@@ -221,6 +224,14 @@ Or simply double-click the HTML file to open it directly in your browser.
 ```bash
 # Execute the evaluation pipeline to benchmark performance
 python -m evals.eval_pipeline
+```
+
+### 6. Run AI Red Team Dashboard (Optional)
+```bash
+# Launch interactive Streamlit red-teaming security dashboard
+cd red_teaming
+pip install -r requirements_for_red_teaming.txt
+streamlit run app.py
 ```
 
 
