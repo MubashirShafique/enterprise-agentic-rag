@@ -8,6 +8,11 @@ This project sends it a large set of adversarial (attack) prompts to check if it
 
 **Important:** This is an authorized test on a system the author owns and controls. No third-party or public systems are targeted.
 
+## Security Dashboard Preview
+
+![AI Red Team Dashboard Overview](images/0_.png)
+<br>
+🔴 **For more previews of each attack module, [click here](images/README.md)!**
 ## Latest Results
 
 | Metric | Value |
